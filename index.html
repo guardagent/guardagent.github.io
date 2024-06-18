@@ -142,8 +142,6 @@
   </div>
 </section>
 
-<!-- End teaser video -->
-
 <!-- Project Overview -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -152,7 +150,7 @@
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
           <p>
-            Welcome to the project page of our GuardAgent! In this project, we aim to provide guardrails to LLM-powered agents (dubbed ``target agents’’ henceforth) by checking whether their inputs/outputs satisfy a set of guard requests (e.g., safety rules or privacy policies) defined by the users. This is fundamentally different from guardrails for LLMs (e.g. Llama Guard <link>) since the output of an LLM agent can be actions, codes, control signals, etc. GuardAgent <link> is designed with two major steps: 1) creating a task plan by analyzing the provided guard requests, and 2) generating guardrail code based on the task plan and executing the code by calling APIs or using external engines. In both steps, an LLM is utilized as the core reasoning component, supplemented by in-context demonstrations retrieved from a memory module. Such knowledge-enabled reasoning allows GuardAgent to understand various textual guard requests and accurately ``translate’’ them into executable code that provides reliable guardrails. In addition to the GuardAgent framework, we contribute two novel benchmarks <link>: an EICU-AC benchmark for assessing privacy-related access control for healthcare agents and a Mind2Web-SC benchmark for safety evaluation for web agents. We show the effectiveness of GuardAgent on these two benchmarks with 98.7% and 90.0% guarding accuracy in moderating invalid inputs and outputs for the two types of agents, respectively. Finally, the GuardAgent API <link> that provides real-time guardrails based on user guard requests will be coming soon.  
+            Welcome to the project page of GuardAgent! In this project, we aim to provide guardrails to LLM-powered agents (dubbed ``target agents’’ henceforth) by checking whether their inputs/outputs satisfy a set of guard requests (e.g., safety rules or privacy policies) defined by the users. This is fundamentally different from guardrails for LLMs (e.g. Llama Guard <link>) since the output of an LLM agent can be actions, codes, control signals, etc. GuardAgent <link> is designed with two major steps: 1) creating a task plan by analyzing the provided guard requests, and 2) generating guardrail code based on the task plan and executing the code by calling APIs or using external engines. In both steps, an LLM is utilized as the core reasoning component, supplemented by in-context demonstrations retrieved from a memory module. Such knowledge-enabled reasoning allows GuardAgent to understand various textual guard requests and accurately ``translate’’ them into executable code that provides reliable guardrails. In addition to GuardAgent, we contribute two novel benchmarks <link>: an EICU-AC benchmark for assessing privacy-related access control for healthcare agents and a Mind2Web-SC benchmark for safety evaluation for web agents. We show the effectiveness of GuardAgent on these two benchmarks with 98.7% and 90.0% guarding accuracy in moderating invalid inputs and outputs for the two types of agents, respectively. Finally, the GuardAgent API <link> that provides real-time guardrails based on user guard requests will be coming soon.  
           </p>
         </div>
       </div>
