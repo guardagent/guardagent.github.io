@@ -181,6 +181,8 @@
             <br/>
             <li><b>Guardrail Code Generation and Execution:</b> Generate guardrail code based on the generated task plan and execute it. The prompt to the core LLM contains: 1) code generation instructions including all callable functions and APIs, 2) demonstrations for code generation retrieved from memory, and 3) generated action plan.</li>
           </ol>
+          <br/><br/>
+          <b>Key features of GuardAgent:</b> 1) <b>generalizable</b> -- the memory and tools of \name can be easily extended to address new target agents with new guard requests, 2) <b>reliable</b> -- outputs of GuardAgent are obtained by successful code execution, and 3) <b>training-free</b> -- GuardAgent is in-context-learning-based and does not need any LLM training.
         </p>
       </div>
     </div>
