@@ -176,10 +176,10 @@
           <b>Inputs to GuardAgent:</b> 1) a set of user-defined guard requests (e.g. for privacy control), 2) a specification of the target agent (needed to inform the user requests), 3) inputs to the target agent, and 4) output (logs) of the target agent.<br/><br/>
           <b>Outputs of GuardAgent:</b> 1) whether or not the outputs of the target agent (actions, responses, etc.) are denied, 2) the reasons if the outputs are denied.<br/><br/>
           <b>Pipeline of GuardAgent:</b><br/><br/>
-          <ol style="PADDING-LEFT: 50px">
+          <ol style="PADDING-LEFT: 50px; text-align: justify">
             <li><b>Task Planning:</b> Generate a step-by-step action plan from the inputs. The prompt to the core LLM includes: 1) planning instructions (fixed for all use cases), 2) demonstrations for task planning retrieved from memory, and 3) inputs to GuardAgent. </li>
             <br/>
-            <li><b>Guardrail Code Generation and Execution:</b></li>
+            <li><b>Guardrail Code Generation and Execution: Generate guardrail code based on the generated task plan and execute it.</b></li>
           </ol>
         </p>
       </div>
