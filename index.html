@@ -231,15 +231,16 @@
       </div>
       <div>
         <p style="text-align: justify">
-          <b>Mind2Web-SC</b> is born out of Mind2Web which contains over 2,000 complex web tasks spanning 137 websites across 31 domains (e.g., car rental, shopping, entertainment, etc.)
+          <b>Mind2Web-SC</b> is born out of <a href="https://osu-nlp-group.github.io/Mind2Web/" style="color:#36AE7C;">Mind2Web</a> which contains over 2,000 complex web tasks spanning 137 websites across 31 domains (e.g., car rental, shopping, entertainment, etc.)
           The target web agent here is designed to solve each task by conducting a sequence of actions grounded on a provided webpage (e.g. clicking on a certain button).
-          Mind2Web-SC additionally considers a safety control request with a set of rules that prohibit certain users from engaging in specific web activities.
+          Mind2Web-SC additionally considers a safety control request with a set of rules that prohibit certain users from engaging in specific web activities (see the figure below).
+          Each example in Mind2Web-SC includes 1) a task to be conducted, 2) an action step towards the completion of the task (correctly inferred by SeeAct), 3) a user profile containing 'age' in integer, and 'domestic', 'dr_license', 'vaccine', and 'membership', all boolean (created by us), 4) a binary label '1' if the action should be denied due to rule violations and '0' otherwise, and 5) the violated rule if the label is '1'.
           <br/><br/>
         </p>
       </div>
       <div>
         <p align="center">
-          <img src="static/images/rules.png" alt="access" width="600"/><br/>
+          <img src="static/images/rules.png" alt="access" width="650"/><br/>
           Safety rules of Mind2Web-SC and the number of examples related to each rule.
         </p>
       </div>
