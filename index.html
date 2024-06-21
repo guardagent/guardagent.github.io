@@ -273,9 +273,18 @@
           2) label prediction precision (<b>LPP</b>), 3) label prediction recall (<b>LPR</b>), and (4) comprehensive control accuracy (<b>CCA</b>) -- the percentage of all examples with ground truth labeled '1' that are correctly predicted AND with correct reasoning (i.e., with all inaccessible databases and information categories (for EICU-AC) or all violated rules (for Mind2Web-SC) successfully detected).
           <br/><br/>
           <b>Baselines:</b> Since GuardAgent is the first LLM agent designed to safeguard other agents, we compare it with baselines using models to safeguard agents.
+          Approaches for model-guard-model, such as LlamaGuard designed to detect predefined unsafe categories, are not considered here due to their completely different objectives.
           Here, we consider GPT-4 version 2024-02-01 and Llama3-70B as the guardrail models.
           We create comprehensive prompts containing high-level guardrail task instructions and the same number of demonstrations as for GuardAgent, but without guardrail code generation or the utilization of long-term memory.
-        </p>
+          <br/><br/>
+          <div>
+            <p align="center">
+              <img src="static/images/results_main.png" alt="access" width="800"/><br/>
+              Performance of GuardAgent on EICU-AC and Mind2Web-SC compared with the model-guard-agent baselines.
+            </p>
+          </div>
+          <b>Main results:</b>
+      </p>
       </div>
     </div>
   </div>
