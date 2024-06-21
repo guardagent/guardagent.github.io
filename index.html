@@ -272,7 +272,9 @@
           <b>Evaluation metrics:</b> 1) label prediction accuracy (<b>LPA</b>) -- the percentage of correct label prediction (i.e., reject inputs for examples labeled to '1' or permit output for examples labeled to '0') over all examples in each dataset,
           2) label prediction precision (<b>LPP</b>), 3) label prediction recall (<b>LPR</b>), and (4) comprehensive control accuracy (<b>CCA</b>) -- the percentage of all examples with ground truth labeled '1' that are correctly predicted AND with correct reasoning (i.e., with all inaccessible databases and information categories (for EICU-AC) or all violated rules (for Mind2Web-SC) successfully detected).
           <br/><br/>
-          <b>Baselines:</b>
+          <b>Baselines:</b> Since GuardAgent is the first LLM agent designed to safeguard other agents, we compare it with baselines using models to safeguard agents.
+          Here, we consider GPT-4 version 2024-02-01 and Llama3-70B as the guardrail models.
+          We create comprehensive prompts containing high-level guardrail task instructions and the same number of demonstrations as for GuardAgent, but without guardrail code generation or the utilization of long-term memory.
         </p>
       </div>
     </div>
