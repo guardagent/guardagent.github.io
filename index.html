@@ -284,11 +284,18 @@
             </p>
           </div>
           <br/><br/>
+          <div>
+            <p align="center">
+              <img src="static/images/detailed_results.png" alt="access" width="600"/><br/>
+              Breakdown of GuardAgent results over the three roles in EICU-AC and the six rules in Mind2Web-SC.
+            </p>
+          </div>
+          <br/><br/>
           <b>Results:</b><br/>
           <ol style="PADDING-LEFT: 50px; text-align: justify">
             <li>GuardAgent outperforms the model-guard-agent baselines. This is likely due to the code generation of GuardAgent that avoids ambiguities in the database names.
             <br/>
-            <li><b>Guardrail Code Generation and Execution:</b> 
+            <li>GuardAgent performs uniformly well for the three roles in EICU-AC and the six rules in Mind2Web-SC, except for rule 5 related to movies, music, and videos, which demonstrates relatively strong capabilities in handling complex guard requests with high diversity.
           </ol>
       </p>
       </div>
